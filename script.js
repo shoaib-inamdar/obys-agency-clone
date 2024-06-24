@@ -165,6 +165,15 @@ gsap.from("#page3 h1",{
 
   }
 })
+gsap.from(".underline",{
+  width:"0%",
+  scrollTrigger:{
+    scroller:'body',
+    trigger:'.page3-heading',
+    start:'top 70%',
+  }
+})
+
 gsap.from(".page4 h1",{
   transform:"translateY(100%)",
   scrollTrigger:{
@@ -174,11 +183,37 @@ gsap.from(".page4 h1",{
 
   }
 })
+gsap.from(".line1",{
+  width:"0%",
+  scrollTrigger:{
+    scroller:'body',
+    trigger:'.page4-heading',
+    start:'top 70%',
+  }
+})
+gsap.from(".line2",{
+  width:"0%",
+  scrollTrigger:{
+    scroller:'body',
+    trigger:'.line2',
+    start:'top 70%',
+  }
+})
 gsap.from(".contact h1",{
   transform:"translateY(100%)",
   scrollTrigger:{
     scroller:'body',
     trigger:'.contact-heading',
+    start:'top 70%',
+
+  }
+})
+gsap.from(".line3,.line4",{
+  width:"0%",
+  stagger:.5,
+  scrollTrigger:{
+    scroller:'body',
+    trigger:'.line3',
     start:'top 70%',
 
   }
